@@ -5,7 +5,8 @@ before_action :set_article, only: [:show, :edit, :update]
     @article = Article.all
   end
 
-  def show 
+  def show
+
   end
 
   def new
@@ -40,7 +41,7 @@ before_action :set_article, only: [:show, :edit, :update]
   end
 
   private
-  def article_params 
+  def article_params
     puts '-------------------'
     puts params
     puts'--------------------'
