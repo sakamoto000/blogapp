@@ -48,7 +48,7 @@ before_action :authenticate_user!, only: [:new,:create,:edit,:update,:destroy]
     puts '-------------------'
     puts params
     puts'--------------------'
-    params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :content, :eyecatch)
   end
 
   def set_article
